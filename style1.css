@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap");
+body {
+  background-image: url(images/repeated-square-dark.png);
+  font-family: "ZCOOL KuaiLe", sans-serif;
+}
+.kotak {
+  width: 400px;
+  height: 50px;
+  border: solid 3px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-top: 10px;
+  display: block;
+  font-size: 15px;
+  text-decoration: none;
+  color: yellow;
+  margin-bottom: 10px;
+}
+.kotak:hover {
+  background-color: chartreuse;
+}
+.heading {
+  text-align: center;
+  color: yellow;
+}
+.headingimg {
+  width: 150px;
+  border-radius: 50%;
+  margin-top: 10px;
+}

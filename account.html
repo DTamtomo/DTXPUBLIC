@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DTXPUBLIC</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+    <div class="container">
+          <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="images/Screenshot (543)-modified.png" width="125px">
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="https://www.google.co.id/maps/place/Toko+Burung+TG/@-6.3695873,106.7389819,17z/data=!4m5!3m4!1s0x0:0x1d40843e14ced6b0!8m2!3d-6.3696459!4d106.7390159">Maps</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="account.html">Account</a></li>
+            </ul>
+        </nav>
+        <img src="images/cart.png" width="=30px" height="30px">
+        <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+    </div>
+
+
+<!--------------------------account-page------------------------------>
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/image1.png" width="100%">
+                </div>
+
+                <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span onclick="Login()">Login</span>
+                            <span onclick="Register()">Register</span>
+                            <hr id="Indicator">
+                        </div>
+                        <form id="LoginForm">
+                            <input type="text" placeholder="Username">
+                            <input type="Password" placeholder="Password">
+                            <button type="submit" class="btn">Login</button>
+                            <a href="">Forgot password</a>
+                        </form>
+
+                        <form id="RegForm">
+                            <input type="text" placeholder="Username">
+                            <input type="email" placeholder="Email">
+                            <input type="Password" placeholder="Password">
+                            <button type="submit" class="btn">Register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+<!------------ footer---------------->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App For Android And Ios Mobile Phone.</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png">
+                        <img src="images/app-store.png">
+                        
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo-white.png" >
+                    <p>Our Purpose Is To Sustanbly Make The Pleasure And Benefits of Sports Accessible To The Many</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                   <ul>
+                       <li>Coupons</li>
+                       <li>Blog</li>
+                       <li>Return policy</li>
+                       <li>Join Affilate</li>
+                   </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow US</h3>
+                   <ul>
+                    <li><a href="https://www.facebook.com/momo.tamtomo//"</a>
+                        <img src="images/facebook.jpg" alt="images/Facebook.jpg" style="width: 50px;"></li>
+ 
+                        <li><a href="https://www.instagram.com/dwi_tamtomo24/"</a>
+                         <img src="images/instagram.jpg" alt="images/instagram.jpg" style="width: 50px;"></li>
+ 
+                        <li><a href="https://www.youtube.com/channel/UCPKJ-Z6hN2MgTw_7IREF_UQ"</a>
+                         <img src="images/yt.png" alt="images/yt.png" style="width: 50px;"></li>
+                   </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="Copyright">Copyriht 2021 - Dwi Tamtomo</p>
+        </div>
+    </div>
+ <!--------------   js for toggle menu  ---------------->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+
+            }
+            else
+            {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+    <!--------------   js for toggle Form ---------------->
+    <script>
+
+        var LoginForm = document.getElementById("LoginForm");
+        var RegForm = document.getElementById("RegForm");
+        var Indicator = document.getElementById("Indicator");
+
+        function Register(){
+            RegForm.style.transform = "translateX(0px)";
+            LoginForm.style.transform = "translateX(0px)";
+            Indicator.style.transform = "translateX(0px)";
+        }
+        function Login(){
+            RegForm.style.transform = "translateX(300px)";
+            LoginForm.style.transform = "translateX(300px)";
+            Indicator.style.transform = "translateX(0px)";
+        }
+    </script>
+
+
+
+</body>
+</html></html>
+
+
+
+
+
+
+
