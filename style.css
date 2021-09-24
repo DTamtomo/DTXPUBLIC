@@ -34,8 +34,7 @@ nav li {
   transition: 1.5s;
 }
 nav li:hover {
-  background: linear-gradient(to right, #ffff00 0%, #4b0082 100%);
-  transform: scale(1.5);
+  background: linear-gradient(to right, #ffff00 20%, #4b0082 100%);
 }
 a {
   text-decoration: none;
@@ -81,7 +80,6 @@ p {
 }
 .btn:hover {
   background: linear-gradient(to right, #191970 0%, #ff3399 100%);
-  transform: skew(30deg);
 }
 .header {
   background: radial-gradient(#fff, #ffd6d6);
@@ -181,7 +179,7 @@ small {
 }
 .fa.fa-quote-left {
   font-size: 35px;
-  color: #ff523b;
+  color: brown;
 }
 .col-3 p {
   font-size: 12px;
@@ -212,7 +210,7 @@ small {
 /*------------footer------------*/
 
 .footer {
-  background: #000;
+  background: DarkMagenta;
   color: #8a8a8a;
   font-size: 14px;
   padding: 60px 0 20px;
@@ -247,11 +245,20 @@ small {
   flex-basis: 12%;
   text-align: center;
 }
+.footer-col-4 icon {
+  margin: 50px;
+}
+.fa fa-instagram {
+  margin: 100px;
+}
+.container-satu-icon {
+  margin: 100px;
+}
 ul {
   list-style-type: none;
 }
 .app-logo {
-  margin-top: 20px;
+  margin: 20px;
 }
 .app-logo img {
   width: 140px;
@@ -270,6 +277,7 @@ ul {
   margin-left: 20px;
   display: none;
 }
+
 /*-----------media query for menu---------------*/
 
 @media only screen and (max-width: 800px) {
