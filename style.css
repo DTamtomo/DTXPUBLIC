@@ -82,7 +82,7 @@ p {
   background: linear-gradient(to right, #191970 0%, #ff3399 100%);
 }
 .header {
-  background: radial-gradient(#fff, #ffd6d6);
+  background-image: url(images/vintage-wallpaper.png);
 }
 .header .row {
   margin-top: 70px;
